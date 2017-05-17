@@ -1,0 +1,8 @@
+pane	0	1	:bash	1	:*	0	:/home/oleglevin/YotaDevices/repo	0	bash	:
+pane	0	1	:bash	1	:*	1	:/home/oleglevin	1	bash	:
+pane	0	2	:bash	0	:-	0	:/home/oleglevin/YotaDevices	1	bash	:
+pane	0	3	:bash	0	: 	0	:/home/oleglevin	1	bash	:
+window	0	1	1	:*	c94b,189x51,0,0{94x51,0,0,0,94x51,95,0,4}
+window	0	2	0	:-	b6ff,189x51,0,0,2
+window	0	3	0	: 	b700,189x51,0,0,3
+state	0	
