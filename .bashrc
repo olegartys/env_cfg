@@ -133,6 +133,14 @@ export QSYS_ROOTDIR="/home/oleglevin/altera_lite/16.0/quartus/sopc_builder/bin"
 export WORKON_HOME=$HOME/.virtualenvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
+}
+
+export PS1="\[\033[35m\]\u@\h\[\033[00m\]: \[\033[32m\]\W\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
+
+setxkbmap -model pc104 -layout us,ru -option grp:alt_shift_toggle
+
 if command -v tmux>/dev/null; then
-  [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
+    [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
 fi
