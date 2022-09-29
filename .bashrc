@@ -142,6 +142,7 @@ export PS1="\[\033[35m\]\u@\h\[\033[00m\]: \[\033[32m\]\W\[\033[33m\]\$(parse_gi
 setxkbmap -model pc104 -layout us,ru -option grp:alt_shift_toggle
 
 alias aw="adb wait-for-device"
+alias rr="adb root && adb remount"
 
 if command -v tmux>/dev/null; then
     [[ ! $TERM =~ screen ]] && [ -z $TMUX ] && exec tmux
